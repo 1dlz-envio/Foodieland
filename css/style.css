@@ -73,12 +73,41 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 100%;
 }
 
-.header__nav {
+.row {
 	display: flex;
 	flex-direction: row;
 }
 
+.header__li {
+	margin-right: 60px;
+}
+
+.header__li:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 1020px) {
+
+	.header__li {
+	margin-right: 30px;
+	}
+}
+
+.header__icon-brick {
+	
+}
+
 .header__icon {
-	display: block;
 	width: 22px;
+	margin-right: 40px;
+}
+
+@media (max-width: 1020px) {
+	.header__icon {
+		margin-right: 20px;
+	}
+}
+
+.img {
+	width: 100%;
 }

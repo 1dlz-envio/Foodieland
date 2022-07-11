@@ -45,6 +45,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	overflow: hidden;
 
 	width: 100%;
+	min-height: 100%;
 	background-color: #fff;
 	
 }
@@ -67,6 +68,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
+}
+
+
+.header__logo {
+	cursor: pointer;
 }
 
 .header__logo-link {
@@ -175,7 +181,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-right: 40px;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 470px) {
 
 	.header__icon-brick {
 		display: none;
@@ -193,7 +199,123 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 100%;
 }
 
+/* main block*/
+
 .main {
 	display: flex;
-	
+	flex-direction: column;
+	flex: 1 1 auto;
 }
+
+/* start of swiper slider*/
+
+.swiper__section {
+	padding: 40px 0 0 0px;
+}
+
+.swiper__card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	max-height: 620px;
+
+}
+
+.swiper-slide{
+	padding: 0 20px;
+}
+
+.radius-left {
+	border-radius: 8% 0 0 8%;
+}
+
+.radius-right {
+	border-radius: 0 8% 8% 0;
+}
+.swiper__textCard {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+
+	background: #E7FAFE;
+}
+
+.swiper__card-label {
+	display: flex;
+	width: max-content;
+	border-radius: 25vh;
+	padding: 10px 20px;
+	background: #fff;
+
+	cursor: pointer;
+}
+
+.swiper__icon {
+	flex:1 1 24px;
+}
+
+.swiper__icon {
+	width: 100%;
+}
+
+/*pagination*/
+
+
+/*bulets*/
+div>.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: rgb(0 0 0 / 50%);
+}
+
+.button__text {
+	padding: 2px 0 0 13px;
+	font-weight: 600;
+	line-height: 17px;
+	letter-spacing: -0.02em;
+	color: #000000;
+}
+
+
+.swiper__imageCard {
+	flex:1 1 50%;
+}
+
+.swiper__imageCard img {
+	width: 100%;
+}
+
+
+/* end of swiper slider*/
+
+
+
+/**end of main block/
+
+/*start footer*/
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	padding: 48px 0;
+}
+
+.footer__text {
+	flex:1 1 auto;
+	text-align: center;
+}
+
+.footer-nogrow {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.footer__textcolor {
+	color:#FF7967;
+}
+
+/*end of footer*/

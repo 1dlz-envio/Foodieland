@@ -6,6 +6,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--Swipe slider -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Foodieland</title>
 </head>
@@ -55,8 +60,82 @@
 				</div>
 			</div>
 		</header>
-		<main class="main"></main>
-		<footer class="footer"></footer>
+		<main class="main">
+			<section class="swiper__section">
+				<div class="slider swiper blog-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper__card radius swiper-slide">
+							<div class="swiper__textCard radius-left">
+								<a href="#" class="swiper__card-label">
+									<span class="swiper__icon">
+										<img src="img/home_page/slider__icon-paper.png" alt="icon-paper">
+									</span>
+									<span class="button__text">Hot Recipes</span>
+								</a>
+								<h2 class="swiper__headtitle">Spicy delicious chicken wings</h2>
+								<p class="swiper__discribe">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+							</div>
+							<div class="swiper__imageCard radius-right">
+								<img src="img/home_page/slider__food-img.jpg" alt="image-food">
+							</div>
+						</div>
+						<div class="swiper__card swiper-slide conteiner">
+							<div class="swiper__textCard radius-left">
+								<a href="#" class="swiper__card-label">
+									<span class="swiper__icon">
+										<img src="img/home_page/slider__icon-paper.png" alt="icon-paper">
+									</span>
+									<span class="button__text">Hot Recipes</span>
+								</a>
+								<h2 class="swiper__headtitle">Spicy delicious chicken wings</h2>
+								<p class="swiper__discribe">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+							</div>
+							<div class="swiper__imageCard radius-right">
+								<img src="img/home_page/slider__food-img.jpg" alt="image-food">
+							</div>
+						</div>
+						<div class="swiper__card swiper-slide">
+							<div class="swiper__textCard radius-left">
+								<a href="#" class="swiper__card-label">
+									<span class="swiper__icon">
+										<img src="img/home_page/slider__icon-paper.png" alt="icon-paper">
+									</span>
+									<span class="button__text">Hot Recipes</span>
+								</a>
+								<h2 class="swiper__headtitle">Spicy delicious chicken wings</h2>
+								<p class="swiper__discribe">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+							</div>
+							<div class="swiper__imageCard radius-right">
+								<img src="img/home_page/slider__food-img.jpg" alt="image-food">
+							</div>
+						</div>
+					</div>
+					<!-- Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section></section>
+		</main>
+		<footer class="footer">
+			<div class="conteiner">
+				<div class="footer__row row">
+					<h4 class="footer__text">© 2020 Flowbase. Powered by <a class="footer__textcolor" href="#">Webflow</a></h4>
+					<div class="header__icon-brick row footer-nogrow">
+						<a class="header__icon" href="#">
+							<img class="img" src="img/home_page/header__facebook.svg" alt="Facebook">
+						</a>
+						<a class="header__icon" href="#">
+							<img class="img" src="img/home_page/header__twitter.svg" alt="Twitter">
+						</a>
+						<a class="header__icon" href="#">
+							<img class="img" src="img/home_page/header__instagram.svg" alt="Instagram">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</div>
 </body>
 </html>

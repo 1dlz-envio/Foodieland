@@ -166,7 +166,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	nav.open>.header__row {
 
 		transition: max-height .7s ease-in;
-		max-height: 1000px;
+		max-height: 3000px;
 
 	}
 
@@ -533,7 +533,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .image{
-	width: 100%;
+	width: 100%;	
+	height: 100%;
 }
 
 .foodCard__nameCategory{
@@ -577,6 +578,145 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 /* end of foodCategory*/
+
+/* start of recepts block*/
+
+.recepts{
+	margin: 10vw 0 0 0;
+}
+
+.recepts__wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recepts__headline{
+	font-weight: 600;
+	font-size: calc(20px + 28  * (100vw / 1440));
+	letter-spacing: -0.04em;
+	color: #000000;
+}
+
+.recepts__headline:first-letter{
+	text-transform: uppercase;
+}
+
+.recepts__info{
+	margin: 4vw 0 0 0;
+	padding: 0 13vw;
+
+	font-size: 16px;
+	line-height: 28px;
+
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.recepts__info:first-letter{
+	text-transform: uppercase;
+}
+
+.recepts__gridBox{
+	margin: 6vw 0 0 0;
+	width: 100%;
+}
+
+.recepts__cards{
+	display: grid;
+	gap:40px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.recepts__card-item{
+	width: 300px;
+	height: 424px;
+	background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+	border-radius: 30px;
+	justify-self: center;
+	align-self: center;
+}
+
+.item-box{
+	display: grid;
+	margin: 16px 16px auto;
+	/*grid-template: 1fr */
+}
+
+.item__image{
+	display: block;
+	position: relative;
+	height: 250px;
+}
+
+.item-box img {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 23px;
+}
+
+.item__title{
+	margin: 14px 0;
+
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+
+   letter-spacing: -0.04em;
+
+   color: #000000;
+}
+
+.item__title:first-letter{
+	text-transform: uppercase;
+}
+
+.item__tagsBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.time__tag{
+
+}
+
+.time__tag:before{
+
+}
+
+.kindFood__tag{
+	display: inline-flex;
+	position: relative;
+	
+}
+
+.kindFood__tag:before{
+	content: '';
+	position: absolute;
+	left: -20px;
+	top:-5px;
+	display: inline-block;
+	background-size: 14px 14px;
+	background-image: url(../img/home_page/fork-and-knife.svg);
+	object-fit: cover;
+	
+}
+
+@media(max-width: 767px) {
+
+	.recepts__headline {
+		font-size: calc(20px + (28 + 28 * 0.7) * ((100vw - 320px) / 1440));
+	}
+
+}
+
+/* end of recepts block*/
 
 /**end of main block/
 

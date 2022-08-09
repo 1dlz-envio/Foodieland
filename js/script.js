@@ -36,5 +36,13 @@ if ((wCountCardsCategory / wConteiner) <= 0.625) {
 } else {
 	categoryButton.addEventListener("click", function(e) {
 		categoryWrapper.classList.toggle('category__action');
+			//change text inside button show/hide Category
+			let textButton = categoryButton.innerHTML;
+
+			if (textButton === "View All Categories") {
+				categoryButton.innerHTML = "Hide Categories";
+			} else {
+				categoryButton.innerHTML = "View All Categories";
+			};
 	});
 };

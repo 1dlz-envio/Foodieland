@@ -252,53 +252,289 @@
 						<h2 class="recepts__headline">simple and tasty recipes</h2>
 						<p class="recepts__info">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
 						<div class="recepts__gridBox">
-							<ul class="recepts__cards">
-								<li class="recepts__card-item">
+							<ul id="receptsCards" class="recepts__cards">
+								<li class="recepts__card-item" data-index="cardOne">
 									<a href="#" class="item-box">
 										<span class="item__image">
-											<img src="img/home_page/recepts__1.jpg" alt="Cheeseburger">
+											<img class="imageOfDish" src="img/home_page/recepts__1.jpg" alt="Cheeseburger">
 										</span>
 										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
 										<span class="item__tagsBlock">
-											<a href="#" class="time__tag">
-												<span>30 Minutes</span>
-											</a>
-											<a href="#" class="kindFood__tag">
-												<span>Snack</span>
-											</a>
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
 										</span>
+										
 									</a>
-									<!-- don`t forget to add a like block -->
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
 								</li>
-								<li class="recepts__card-item">
+		                  <li class="recepts__card-item" data-item="cardTwo">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__2.jpg" alt="Fish">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" data-item="cardThree">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__3.jpg" alt="pancake">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" data-item="cardFour">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__4.jpg" alt="dish">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" data-item="cardFive">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__5.jpg" alt="meatBolls">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" data-item="cardSix">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__6.jpg" alt="Pancake">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" data-item="cardSeven">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__7.jpg" alt="vegetables">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li order='1' class="recepts__card-item" data-item="cardEight">
+									<a href="#" class="item-box">
+										<span class="item__image">
+											<img class="imageOfDish" src="img/home_page/recepts__8.jpg" alt="pasta">
+										</span>
+										<h3 class="item__title">big and Juicy Wagyu Beef Cheeseburger</h3>
+										<span class="item__tagsBlock">
+											<div class="time__tag">
+												<span class="item__clockIcon item">
+													<img class="spanImage" src="img/home_page/icon-timer.png" alt="timer">
+												</span>
+												<span class="span__text">30 Minutes</span>
+											</div>
+											<div href="#" class="time__tag">
+												<span class="item__Icon item">
+													<img class="spanImage" src="img/home_page/fork-and-knife.svg" alt="forkAndKnife">
+												</span>
+												<span class="span__text">Snack</span>
+											</div>
+										</span>
+										
+									</a>
+									<!-- likeSpot (mark a favorite ricepts) -->
+									<div id="likeSpot" class="likeSpot">
+										<div id="heart-shape" class="heart-shape"></div>
+									</div>
+								</li>
+								<li class="recepts__card-item" id="comercial">
+									<a href="#" class="comercial__box">
+										<img src="img/home_page/recepts__comercial.jpg" alt="comercial">
+									</a>
 									
 								</li>
-								<li class="recepts__card-item">
 									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
-								<li class="recepts__card-item">
-									
-								</li>
 							</ul>
 						</div>
 					</section>
 				</div>
-			</section>			
+			</section>
+			<section class="chef">
+				<div class="conteiner">
+					<div class="chef__block">
+						<div class="chef__textCard">
+							<h3 class="chef__title">Everyone can be a
+							chef in their own kitchen</h3>
+							<p class="chef__text">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+							<a href="#" class="chef__btn">
+								<span class="chef__btn-text">Learn More</span>
+							</a>
+						</div>
+						<div class="chef__imageBox">
+							<div class="chef__chef">
+								<img src="img/home_page/chef__chef.png" alt="Chef">
+							</div>
+							<div class="chef__icon-fivety tomato">
+								<img class="chef-icon" src="img/home_page/chef__tomato.png" alt="tomato">
+							</div>
+							<div class="chef__icon-fivety onion">
+								<img class="chef-icon" src="img/home_page/chef__onion.png" alt="onion">
+							</div>
+							<div class="chef__icon-fivety meat">
+								<img class="chef-icon" src="img/home_page/chef__meat.png" alt="meat">
+							</div>
+							<div class="chef__icon-fivety vagetbles">
+								<img class="chef-icon" src="img/home_page/chef__vagetbles.png" alt="vagetbles">
+							</div>
+							
+						</div>
+					</div>
+			</section>
+			<section class="socialBlock">
+				<div class="conteiner">
+					<div class="socialBlock__box">
+						<h2 class="socialBlock__headtitle">Check out @foodieland on Instagram</h2>
+						<p class="socialBlock__text">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+						<div class="socialBlock__postBox">
+							<div class="socialBlock-item">pic1</div>
+							<div class="socialBlock-item">pic2</div>
+							<div class="socialBlock-item">pic3</div>
+							<div class="socialBlock-item">pic4</div>
+						</div>
+						<a href="#" class="swiper__buttonLink buttomLink__padding">
+							<span class="swiper__buttonLink-text">
+								Visit Our Instagram
+							</span>
+							<span class="swiper__buttonLink-icon color">
+								<img src="img/home_page/004-instagraminsta-logo.png" alt="gotoinstagran">
+							</span>
+						</a>
+					</div>
+				</div>
+			</section>	
+			
 		</main>
 		<footer class="footer">
 			<div class="conteiner">

@@ -1070,6 +1070,68 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* end of socialBlock */
 
+/* start of dRecepts*/
+	.dRecepts{
+		max-width: 100%;
+		background: white;
+	}
+
+	.dRecepts__box{
+		display: flex;
+		flex-direction: column;
+
+		padding-top:min(160px, 4%);
+		padding-bottom: min(160px, 4%);
+	}
+
+	.dRecepts__headRow{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: min(80px, 3%);
+	}
+
+	.dRecepts__headtitle{
+	align-self: center;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: -0.04em;
+
+	color: #000000;
+
+	padding-right: min(20px, 2%);
+	}
+
+	.dRecepts__discribe{
+	align-self: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(0, 0, 0, 0.6);
+	}
+
+
+@media(max-width: 767px) {
+
+	.dRecepts__headtitle {
+		font-size: calc(16px + (32 + 32 * 0.7) * ((100vw - 320px) / 1440));
+		line-height: calc(16px + (42 + 42 * 0.7) * ((100vw - 320px) / 1440));
+		
+	}
+
+}
+
+@media(max-width: 715px) {
+
+	.dRecepts__headRow {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+/* end of dRecepts*/
+
 /*end of main block*/
 
 /*start footer*/
